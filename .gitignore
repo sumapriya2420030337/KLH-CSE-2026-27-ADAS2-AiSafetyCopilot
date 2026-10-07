@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment / secrets
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# Testing / tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ML artifacts
+*.pt
+*.pth
+*.onnx
+*.engine
+runs/
+wandb/
+mlruns/
+
+# Project-generated data
+data/videos/
+data/audio/
+result/outputs/
+results/
+outputs/
+logs/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wav
+*.mp3
+*.json
+
+# OS
+.DS_Store
+Thumbs.db
