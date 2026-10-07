@@ -1,0 +1,27 @@
+video:
+  output_path: result/outputs
+  frame_skip: 1
+  imgsz: 416
+  max_frames:
+  progress_interval: 10
+tracking:
+  high_confidence: 0.5
+  low_confidence: 0.1
+  match_threshold: 0.3
+  track_buffer: 30
+  max_missing_frames: 30
+  history_size: 30
+prediction:
+  mode: baseline
+  sequence_length: 20
+  horizon_seconds: 3.0
+  hidden_size: 64
+  num_layers: 2
+  model_path:
+  scaler_path:
+trajectory:
+  raw_highd_dir: data/highd/raw
+  prepared_path: data/trajectories/highd.csv
+  history_seconds: 3.0
+  prediction_seconds: 3.0
+  sampling_rate: 25.0
